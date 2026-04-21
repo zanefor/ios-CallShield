@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001001 /* CallShieldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001001 /* CallShieldApp.swift */; };
+		A10001002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001002 /* ContentView.swift */; };
+		A10001003 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001003 /* HomeView.swift */; };
+		A10001004 /* BlockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001004 /* BlockListView.swift */; };
+		A10001005 /* AddNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001005 /* AddNumberView.swift */; };
+		A10001006 /* BlockRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001006 /* BlockRecordView.swift */; };
+		A10001007 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001007 /* SettingsView.swift */; };
+		A10001008 /* BlockNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001008 /* BlockNumber.swift */; };
+		A10001009 /* BlockRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001009 /* BlockRecord.swift */; };
+		A1000100A /* AppGroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000100A /* AppGroupManager.swift */; };
+		A1000100B /* PresetNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000100B /* PresetNumbers.swift */; };
+		A1000100C /* BlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000100C /* BlockManager.swift */; };
+		A1000100E /* BlockCheckService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20001010 /* BlockCheckService.swift */; };
+		A1000100D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000100E /* Assets.xcassets */; };
+		A10003003 /* SpamPrefixResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20003004 /* SpamPrefixResolver.swift */; };
+		A10002001 /* CallDirectoryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20002001 /* CallDirectoryHandler.swift */; };
+		A10002002 /* BlockNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20002002 /* BlockNumber+Extension.swift */; };
+		A10002003 /* CallShieldCallDirectory.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A30002001 /* CallShieldCallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A60001004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60002001;
+			remoteInfo = CallShieldCallDirectory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A40001004 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A10002003 /* CallShieldCallDirectory.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A20001001 /* CallShieldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallShieldApp.swift; sourceTree = "<group>"; };
+		A20001002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20001003 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A20001004 /* BlockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockListView.swift; sourceTree = "<group>"; };
+		A20001005 /* AddNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNumberView.swift; sourceTree = "<group>"; };
+		A20001006 /* BlockRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRecordView.swift; sourceTree = "<group>"; };
+		A20001007 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20001008 /* BlockNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNumber.swift; sourceTree = "<group>"; };
+		A20001009 /* BlockRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRecord.swift; sourceTree = "<group>"; };
+		A2000100A /* AppGroupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupManager.swift; sourceTree = "<group>"; };
+		A2000100B /* PresetNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetNumbers.swift; sourceTree = "<group>"; };
+		A2000100C /* BlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockManager.swift; sourceTree = "<group>"; };
+		A20001010 /* BlockCheckService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockCheckService.swift; sourceTree = "<group>"; };
+		A2000100D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2000100E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000100F /* CallShield.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallShield.entitlements; sourceTree = "<group>"; };
+		A20002001 /* CallDirectoryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDirectoryHandler.swift; sourceTree = "<group>"; };
+		A20002002 /* BlockNumber+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlockNumber+Extension.swift"; sourceTree = "<group>"; };
+		A20002003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20002004 /* CallShieldCallDirectory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallShieldCallDirectory.entitlements; sourceTree = "<group>"; };
+		A20003001 /* LiveCallerIDExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCallerIDExtension.swift; sourceTree = "<group>"; };
+		A20003002 /* LiveCallerIDHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCallerIDHandler.swift; sourceTree = "<group>"; };
+		A20003004 /* SpamPrefixResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamPrefixResolver.swift; sourceTree = "<group>"; };
+		A30001001 /* CallShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30002001 /* CallShieldCallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallShieldCallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40001001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40002001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50000001 = {
+			isa = PBXGroup;
+			children = (
+				A50001001 /* CallShield */,
+				A50002001 /* CallShieldCallDirectory */,
+				A50003001 /* CallShieldLiveCallerID */,
+				A50000002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A50000002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30001001 /* CallShield.app */,
+				A30002001 /* CallShieldCallDirectory.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A50001001 /* CallShield */ = {
+			isa = PBXGroup;
+			children = (
+				A20001001 /* CallShieldApp.swift */,
+				A50001002 /* Views */,
+				A50001003 /* Models */,
+				A50001004 /* Services */,
+				A2000100E /* Assets.xcassets */,
+				A2000100F /* CallShield.entitlements */,
+				A2000100D /* Info.plist */,
+			);
+			path = CallShield;
+			sourceTree = "<group>";
+		};
+		A50001002 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20001002 /* ContentView.swift */,
+				A20001003 /* HomeView.swift */,
+				A20001004 /* BlockListView.swift */,
+				A20001005 /* AddNumberView.swift */,
+				A20001006 /* BlockRecordView.swift */,
+				A20001007 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A50001003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20001008 /* BlockNumber.swift */,
+				A20001009 /* BlockRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A50001004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A2000100A /* AppGroupManager.swift */,
+				A2000100B /* PresetNumbers.swift */,
+				A2000100C /* BlockManager.swift */,
+				A20001010 /* BlockCheckService.swift */,
+				A20003004 /* SpamPrefixResolver.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A50002001 /* CallShieldCallDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				A20002001 /* CallDirectoryHandler.swift */,
+				A20002002 /* BlockNumber+Extension.swift */,
+				A20002004 /* CallShieldCallDirectory.entitlements */,
+				A20002003 /* Info.plist */,
+			);
+			path = CallShieldCallDirectory;
+			sourceTree = "<group>";
+		};
+		A50003001 /* CallShieldLiveCallerID */ = {
+			isa = PBXGroup;
+			children = (
+				A20003001 /* LiveCallerIDExtension.swift */,
+				A20003002 /* LiveCallerIDHandler.swift */,
+			);
+			path = CallShieldLiveCallerID;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60001001 /* CallShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70001003 /* Build configuration list for PBXNativeTarget "CallShield" */;
+			buildPhases = (
+				A40001002 /* Sources */,
+				A40001001 /* Frameworks */,
+				A40001003 /* Resources */,
+				A40001004 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A60001003 /* PBXTargetDependency */,
+			);
+			name = CallShield;
+			productName = CallShield;
+			productReference = A30001001 /* CallShield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60002001 /* CallShieldCallDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70002003 /* Build configuration list for PBXNativeTarget "CallShieldCallDirectory" */;
+			buildPhases = (
+				A40002002 /* Sources */,
+				A40002001 /* Frameworks */,
+				A40002003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallShieldCallDirectory;
+			productName = CallShieldCallDirectory;
+			productReference = A30002001 /* CallShieldCallDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A60001001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A60002001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A70000003 /* Build configuration list for PBXProject "CallShield" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = A50000001;
+			productRefGroup = A50000002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60001001 /* CallShield */,
+				A60002001 /* CallShieldCallDirectory */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A40001003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000100D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40002003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A40001002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001001 /* CallShieldApp.swift in Sources */,
+				A10001002 /* ContentView.swift in Sources */,
+				A10001003 /* HomeView.swift in Sources */,
+				A10001004 /* BlockListView.swift in Sources */,
+				A10001005 /* AddNumberView.swift in Sources */,
+				A10001006 /* BlockRecordView.swift in Sources */,
+				A10001007 /* SettingsView.swift in Sources */,
+				A10001008 /* BlockNumber.swift in Sources */,
+				A10001009 /* BlockRecord.swift in Sources */,
+				A1000100A /* AppGroupManager.swift in Sources */,
+				A1000100B /* PresetNumbers.swift in Sources */,
+				A1000100C /* BlockManager.swift in Sources */,
+				A1000100E /* BlockCheckService.swift in Sources */,
+				A10003003 /* SpamPrefixResolver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40002002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10002001 /* CallDirectoryHandler.swift in Sources */,
+				A10002002 /* BlockNumber+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A60001003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60002001 /* CallShieldCallDirectory */;
+			targetProxy = A60001004 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A70001001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A70001002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A70001004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CallShield/CallShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RH6MHK8BB6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CallShield/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callshield.CallShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_DESTINATIONS = "iPhone,iPad";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A70001005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CallShield/CallShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RH6MHK8BB6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CallShield/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callshield.CallShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_DESTINATIONS = "iPhone,iPad";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A70002004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallShieldCallDirectory/CallShieldCallDirectory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RH6MHK8BB6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CallShieldCallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callshield.CallShield.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_DESTINATIONS = "iPhone,iPad";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A70002005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CallShieldCallDirectory/CallShieldCallDirectory.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RH6MHK8BB6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CallShieldCallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callshield.CallShield.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_DESTINATIONS = "iPhone,iPad";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000003 /* Build configuration list for PBXProject "CallShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70001001 /* Debug */,
+				A70001002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70001003 /* Build configuration list for PBXNativeTarget "CallShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70001004 /* Debug */,
+				A70001005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70002003 /* Build configuration list for PBXNativeTarget "CallShieldCallDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70002004 /* Debug */,
+				A70002005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80000001 /* Project object */;
+}
