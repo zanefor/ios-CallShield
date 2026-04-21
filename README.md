@@ -1,9 +1,9 @@
 # CallShield 来电护盾
 
 <p align="center">
-  <img src="https://img.shields.io/badge/iOS-16.0+-blue.svg" />
-  <img src="https://img.shields.io/badge/Swift-5.9-orange.svg" />
-  <img src="https://img.shields.io/badge/Xcode-15.0+-blue.svg" />
+  <img src="https://img.shields.io/badge/iOS-17.0+-blue.svg" />
+  <img src="https://img.shields.io/badge/Swift-6.0+-orange.svg" />
+  <img src="https://img.shields.io/badge/Xcode-26.0+-blue.svg" />
   <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-green.svg" />
 </p>
 
@@ -134,9 +134,9 @@ CallShield/
 
 ### 环境要求
 
-- iOS 16.0+
-- Xcode 15.0+
-- Swift 5.9+
+- iOS 17.0+
+- Xcode 26.0+
+- Swift 6.0+
 - 真机测试（模拟器不支持 CallKit 来电拦截）
 
 ### 编译安装
