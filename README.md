@@ -12,9 +12,9 @@ iOS 来电拦截应用，覆盖全国 **267 个非偏远地区区号 × 4 个骚
 ## UI 界面
 
 <p align="center">
-  <img src="assets/home.png" width="280" alt="首页" />
+  <img src="assets/home.jpg" width="280" alt="首页" />
   &nbsp;&nbsp;&nbsp;
-  <img src="assets/settings.png" width="280" alt="设置" />
+  <img src="assets/settings.jpg" width="280" alt="设置" />
 </p>
 
 | 首页 | 设置 |
